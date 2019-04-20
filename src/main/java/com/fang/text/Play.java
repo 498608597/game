@@ -6,12 +6,14 @@ package com.fang.text;
 public class Play {
     private int firstNum;
     private int secondNum;
-    public Play(int firstNum,int secondNum){
+    private int maxNum;
+    public Play(int firstNum,int secondNum,int maxNum){
         this.firstNum=firstNum;
         this.secondNum=secondNum;
+        this.maxNum=maxNum;
     }
     //stage1
-    public void play(int maxNum) {
+    public void play() {
         String first = "fizz";
         String second = "buzz";
         for (int i = 1; i <= maxNum; i++) {
@@ -27,7 +29,7 @@ public class Play {
         }
     }
     //stage2
-    public void play2(int maxNum) {
+    public void play2() {
         String first = "fizz";
         String second = "buzz";
         boolean firstFlag;

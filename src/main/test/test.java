@@ -11,13 +11,13 @@ public class test {
 
     @Test
     public void test1(){
-        Play play=new Play(3,5);
-        play.play(100);
+        Play play=new Play(3,5,100);
+        play.play();
     }
     @Test
     public void test2(){
-        Play play=new Play(3,5);
-        play.play2(100);
+        Play play=new Play(3,5,100);
+        play.play2();
     }
 
 }
